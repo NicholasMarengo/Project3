@@ -1,33 +1,33 @@
 
 public abstract class Events {
-	//public abstract class Events{
-		
-		public String name;
-		public int playTo;
-		public boolean isPlayToExact;
-		public int playDistance;
-		
-		public abstract String getExtraInfo();
+	private String name;
+	private int playTo;
+	private boolean isPlayToExact;
+	private int playDistance;
 	
-	public Events(String name, int playTo, boolean isPlayToExact, int playDistance){
-		this.name = name;
-		this.playTo = playTo;
-		this.isPlayToExact = isPlayToExact;
-		this.playDistance = playDistance;
+	public abstract String getExtraInfo();
 	
-
-
-	public String getEventInfo(){
-		return this.name + "_" + this.playTo + "_" + this.isPlayToExact + "_" + this.playDistance + getExtraInfo + ".";
+	public Events() {
+		this.name = "";
+		this.playTo = 0;
+		this.isPlayToExact = false;
+		this.playDistance = 0;
+	}
 	
-	}		
-
+	protected Events(String newName, int newPlayTo, boolean newIsPlayToExact, int newPlayDistance) {
+		this.name = newName;
+		this.playTo = newPlayTo;
+		this.isPlayToExact = newIsPlayToExact;
+		this.playDistance = newPlayDistance;
+	}
+	
+	
+	
+	public String getInfo() {
+		return this.name + " : " + this.playTo + " : " + this.isPlayToExact + " : " + this.playDistance + " : " + getExtraInfo();
 	}
 
-
-	private void getEventInfo() {
-		// TODO Auto-generated method stub
-		
-	}	
 	
-}	
+	
+	
+}

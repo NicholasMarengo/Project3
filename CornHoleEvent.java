@@ -10,7 +10,7 @@ public class CornHoleEvent extends Events {
 	}
 
 	@Override public String getExtraInfo(){
-		return "_has 4 beanbags";
+		return "this game has " + numBeanBags + " beanbags!";
 	
 }
 }

@@ -13,7 +13,7 @@ public class WashoosEvent extends Events{
 	
 
 	@Override public String getExtraInfo(){
-		return "_has Auto Win Stick_10 Washoos";
+		return "This game has " + numWashoos + " washoos and there is an auto-win stick";
 	}
 }
 
