@@ -1,8 +1,8 @@
 
-public class LadderBallEvent {
+public class LadderBallEvent extends Events {
 	private int numRings = 6;
-	public LadderBallEvent(String name, int playTo, boolean isPlayToExact, int playDistance){
-	super (name, playTo, isPlayToExact, playDistance);
+	public LadderBallEvent(String newName, int newPlayTo, boolean newIsPlayToExact, int newPlayDistance){
+	super (newName, newPlayTo, newIsPlayToExact, newPlayDistance);
 	}
 	
 	public LadderBallEvent(){
@@ -10,7 +10,7 @@ public class LadderBallEvent {
 	}
 
 	@Override public String getExtraInfo(){
-		return "_has 6 rings";
+		return "This game is played with " + numRings + "rings!";
 
 }
 }

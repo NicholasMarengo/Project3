@@ -1,26 +1,28 @@
+import java.awt.Event;
+
 
 public class EventManager {
 	
-		//initialize the EventManager class
-		public EventManager(){
-		
-		Events[] eventList = new eventList[6];{
-		this.eventList[0] = new CanJamEvent();
-		this.eventList[1] = new CornHoleEvent();
-		this.eventList[2] = new HorseShoesEvent();
-		this.eventList[3] = new LadderBallEvent();
-		this.eventList[4] = new StickGame(); 
-		this.eventList[5] = new WashoosEvent(); 
-		}
-		
-		}	
-		public void printEvents() {
-		
-		for (int i=0; i<eventList.length; i++){
-			System.out.println(eventList[i].getEventInfo());
-		}
+		Event[] eventArray = new Event[6];
+		{
 			
-		} }
-		
-		
+			this.eventArray[0] = new WashoosEvent();
+			this.eventArray[1] = new StickGame();
+			this.eventArray[2] = new LadderBallEvent();
+			this.eventArray[3] = new HorseShoesEvent();
+			this.eventArray[4] = new CornHoleEvent();
+			this.eventArray[5] = new CanJamEvent();
+			
+		}
+		public Event[] EventManager(){
+			return this.eventArray
+		}
 
+		public void printEvents(){
+			for (int i = 0; i< eventArray.length; i++) {
+				System.out.println(eventArray[i].getInfo());
+				
+				
+			}
+		}
+}
