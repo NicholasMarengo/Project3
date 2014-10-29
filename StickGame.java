@@ -1,8 +1,9 @@
 
 public class StickGame extends Events {
+	
 	private int frisbeesize = 5;
-	public StickGame(String name, int playTo, boolean isPlayToExact, int playDistance){
-	super (name, playTo, isPlayToExact, playDistance);
+		public StickGame(String name, int playTo, boolean isPlayToExact, int playDistance){
+			super (name, playTo, isPlayToExact, playDistance);
 	}
 	
 	public StickGame(){
@@ -12,6 +13,5 @@ public class StickGame extends Events {
 
 	@Override public String getExtraInfo(){
 		return  "The frisbee used in this game has a size of " + frisbeesize + "inches";
-
-}
+	}
 }

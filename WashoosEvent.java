@@ -3,8 +3,9 @@ public class WashoosEvent extends Events{
 	
 	boolean hasAutoWinStick = true;
 	private int numWashoos = 10;
+	
 	public WashoosEvent(String name, int playTo, boolean isPlayToExact, int playDistance){
-	super (name, playTo, isPlayToExact, playDistance);
+		super (name, playTo, isPlayToExact, playDistance);
 	}
 	
 	public WashoosEvent(){

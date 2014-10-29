@@ -1,7 +1,6 @@
 
 public class Olympian {
 		
-		
 		String name;
 		Sex sex;
 		int age;
@@ -11,7 +10,6 @@ public class Olympian {
 			this.sex = Sex.M;
 			this.age = 0;
 		}
-		
 		
 		public Olympian(String newName, Sex newSex, int newAge) {
 			this.name = newName;

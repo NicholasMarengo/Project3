@@ -42,9 +42,7 @@ public class OlympianManager {
 				
 			}catch (Exception e) {
 				
-			}
-				
-				
+			}		
 		}			
 			
 		/*	

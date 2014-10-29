@@ -5,7 +5,7 @@ public class TeamManager {
 		private int teams;
 		private Olympian[] managerArray;
 		private int teamSize;
-		private Team[] teamArray = new Team[14];
+		private Team[] teamArray = new Team[15];
 		private int current = 0;
 		
 		
@@ -21,8 +21,8 @@ public class TeamManager {
 			
 			while(totalTeamSize != 0) {
 				Random rn = new Random();
-				int random1 = rn.nextInt(14) + 1;
-				int random2 = rn.nextInt(14) + 1;
+				int random1 = rn.nextInt(15) + 1;
+				int random2 = rn.nextInt(15) + 1;
 			
 			
 				if(managerArray[random1] !=null && managerArray[random2] != null) {
@@ -42,8 +42,7 @@ public class TeamManager {
 			
 			}
 			
-			
-			
+				
 			
 		}
 		
@@ -51,8 +50,8 @@ public class TeamManager {
 		return this.teamArray;
 	}
 	
-	public void printTeams(){
-		
+	public printTeams(){
+		return teamArray;
 	}
 		
 		

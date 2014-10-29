@@ -21,13 +21,7 @@ public abstract class Events {
 		this.playDistance = newPlayDistance;
 	}
 	
-	
-	
 	public String getInfo() {
 		return this.name + " : " + this.playTo + " : " + this.isPlayToExact + " : " + this.playDistance + " : " + getExtraInfo();
 	}
-
-	
-	
-	
 }

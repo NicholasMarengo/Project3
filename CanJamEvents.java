@@ -13,9 +13,4 @@ public class CanJamEvents extends Events {
 		@Override public String getExtraInfo(){
 			return "The frisbee in this game is " + frisbeeSize + " inches big.";
 		}
-	
-
 }
-
-
-
