@@ -1,14 +1,18 @@
 
 public class Olympian {
 		
-		String name;
-		Sex sex;
-		int age;
+		private String name;
+		private Sex sex;
+		private int age;
 		
 		public Olympian(){
 			this.name = "";
 			this.sex = Sex.M;
 			this.age = 0;
+		}
+		
+		public Sex getSex(){
+			return this.sex;
 		}
 		
 		public Olympian(String newName, Sex newSex, int newAge) {

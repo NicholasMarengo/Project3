@@ -1,0 +1,17 @@
+LGOO
+Tita,F,18
+Brandon,M,19
+Alyssa,F,19
+Duane,M,19
+Rachelle,F,19
+Jae,F,18
+Zack,M,19
+Jon,M,19
+Gab,F,20
+Talia,F,20
+Brian,M,99
+Ethan,M,19
+Max,F,20
+Will,M,19
+Nicholas,M,19
+Jack,F,19

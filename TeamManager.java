@@ -10,16 +10,20 @@ public class TeamManager {
 		
 		
 		public TeamManager() {
+			
 			for(int i = 0; i < teamArray.length; i++) {
 				teamArray[i] = new Team();
 			}
 			
 			OlympianManager OM = new OlympianManager();
+			
 			managerArray = OM.getObjectOlympians();
 			teamSize = managerArray.length / 2;
+			
 			int totalTeamSize = managerArray.length;
 			
 			while(totalTeamSize != 0) {
+				
 				Random rn = new Random();
 				int random1 = rn.nextInt(15) + 1;
 				int random2 = rn.nextInt(15) + 1;
@@ -29,34 +33,33 @@ public class TeamManager {
 					teamArray[current].SetInfo(managerArray[random1], managerArray[random2], 0, 0);
 					
 					current++;
-					if(random1 == random2) {
+					if ((managerArray[random1].getSex() == Sex.M && managerArray[random2].getSex() == Sex.M) || (random1 == random2)) {
 						current--;
-					}else if(random1 == Sex.M) {
+					}
 					
-					}else{
+					else{
 						managerArray[random1] = null;
 						managerArray[random2] = null;
 						totalTeamSize = totalTeamSize - 2;
+						
+						
+					}{
+						
 					}
+						
 				}
 			
-			}
-			
-				
-			
+			}	
 		}
 		
 	public Team[] getTeamArray(){
 		return this.teamArray;
 	}
 	
-	public printTeams(){
-		return teamArray;
+	public void printTeams(){
+		System.out.println(for(int i = 0; i < teamArray[i].length()); i++) {
+					System.out.println(teamArray[i].getInfo());
 	}
-		
-		
-		
-		
-		
-		
+				
+}
 }
